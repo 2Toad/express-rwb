@@ -1,0 +1,50 @@
+{
+  "info": {
+    "_postman_id": "f222b217-1da7-4fae-b581-9a5b430f91c7",
+    "name": "express-rest-websocket-boilerplate",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Echo",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"input\": \"Hello World\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:3000/example/echo",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "3000",
+          "path": ["example", "echo"]
+        },
+        "description": "This example showcases a successful POST to the REST API. Any value added to the \"input\" property in the body will be returned by the server."
+      },
+      "response": []
+    },
+    {
+      "name": "No Role",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:3000/example/auth/test",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "3000",
+          "path": ["example", "auth", "test"]
+        },
+        "description": "This example showcases a failed GET from the REST API. The endpoint requires the user to have the \"admin\" role, and the request is blocked because they do not."
+      },
+      "response": []
+    }
+  ]
+}

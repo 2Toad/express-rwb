@@ -1,0 +1,22 @@
+{
+  "env": {
+    "node": true,
+    "jest": true
+  },
+  "extends": ["airbnb-base", "plugin:jest/recommended", "plugin:security/recommended", "plugin:prettier/recommended"],
+  "plugins": ["jest", "security", "prettier"],
+  "parserOptions": {
+    "ecmaVersion": 2018
+  },
+  "rules": {
+    "no-console": "error",
+    "func-names": "off",
+    "no-underscore-dangle": "off",
+    "consistent-return": "off",
+    "jest/expect-expect": "off",
+    "security/detect-object-injection": "off",
+    "import/no-named-as-default-member": "off",
+    "import/prefer-default-export": "off",
+    "class-methods-use-this": "off"
+  }
+}

@@ -1,0 +1,22 @@
+# dependencies
+node_modules
+
+# Config
+.env
+
+# SQLite Example DB
+file:SQLiteExampleDb*
+
+# Code coverage
+coverage
+
+# IDE - VSCode
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+# System Files
+.DS_Store
+Thumbs.db
